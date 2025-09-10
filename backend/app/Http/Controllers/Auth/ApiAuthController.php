@@ -44,7 +44,7 @@ class ApiAuthController extends Controller
         $result = $action->handle($data);
 
         return ApiResponse::success([
-            'user'  => new UserResource($result['user']),
+            'user'  => (new UserResource($result['user']))->toArray($request),
             'token' => $result['token'],
         ], 'Login exitoso');
     }
