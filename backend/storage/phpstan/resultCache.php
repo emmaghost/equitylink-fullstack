@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 
 return [
-	'lastFullAnalysisTime' => 1757485897,
+	'lastFullAnalysisTime' => 1757531362,
 	'meta' => array (
   'cacheVersion' => 'v12-linesToIgnore',
   'phpstanVersion' => '2.1.22',
@@ -20,7 +20,7 @@ return [
   ),
   'composerLocks' => 
   array (
-    'C:/laragon/www/equitylink-fullstack/backend/composer.lock' => 'a4a29d0e85faedb95cb31756e51ed7f5fd6f21e8',
+    'C:/laragon/www/equitylink-fullstack/backend/composer.lock' => '7e30c9ad687cea1a26349b3b248bd4f348e29908',
   ),
   'composerInstalled' => 
   array (
@@ -28,6 +28,18 @@ return [
     array (
       'versions' => 
       array (
+        'brianium/paratest' => 
+        array (
+          'pretty_version' => 'v7.5.0',
+          'version' => '7.5.0.0',
+          'type' => 'library',
+          'install_path' => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\vendor\\composer/../brianium/paratest',
+          'aliases' => 
+          array (
+          ),
+          'reference' => '90a0ba27d1347e054d62fea30f3414f09fe9bad3',
+          'dev_requirement' => true,
+        ),
         'brick/math' => 
         array (
           'pretty_version' => '0.14.0',
@@ -138,6 +150,18 @@ return [
           array (
           ),
           'reference' => 'e0ee18eb1e6dc3cda3ce9fd97e5a0689a88a64b5',
+          'dev_requirement' => true,
+        ),
+        'fidry/cpu-core-counter' => 
+        array (
+          'pretty_version' => '1.3.0',
+          'version' => '1.3.0.0',
+          'type' => 'library',
+          'install_path' => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\vendor\\composer/../fidry/cpu-core-counter',
+          'aliases' => 
+          array (
+          ),
+          'reference' => 'db9508f7b1474469d9d3c53b86f817e344732678',
           'dev_requirement' => true,
         ),
         'filp/whoops' => 
@@ -527,6 +551,18 @@ return [
           array (
             0 => 'v12.28.1',
           ),
+        ),
+        'jean85/pretty-package-versions' => 
+        array (
+          'pretty_version' => '2.1.1',
+          'version' => '2.1.1.0',
+          'type' => 'library',
+          'install_path' => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\vendor\\composer/../jean85/pretty-package-versions',
+          'aliases' => 
+          array (
+          ),
+          'reference' => '4d7aa5dab42e2a76d99559706022885de0e18e1a',
+          'dev_requirement' => true,
         ),
         'kodova/hamcrest-php' => 
         array (
@@ -1971,18 +2007,6 @@ return [
       ),
     ),
   ),
-  'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php' => 
-  array (
-    'PHPStan\\Rules\\DeadCode\\MethodWithoutImpurePointsCollector' => 
-    array (
-      0 => 
-      array (
-        0 => 'App\\Http\\Resources\\InvoiceResource',
-        1 => 'toArray',
-        2 => 'App\\Http\\Resources\\InvoiceResource',
-      ),
-    ),
-  ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Requests\\Auth\\LoginRequest.php' => 
   array (
     'Larastan\\Larastan\\Collectors\\UsedTranslationFunctionCollector' => 
@@ -2254,7 +2278,7 @@ return [
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Actions\\Invoices\\ProcessInvoiceUpload.php' => 
   array (
-    'fileHash' => 'e801d6a1130fe3a7d3f6bb9feb4fabd09d8ee3b8',
+    'fileHash' => 'bd6bbf9bf9debb76a38e0ec425ef29273548715c',
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Console\\Commands\\ProcessInvoicesCommand.php',
@@ -2277,7 +2301,7 @@ return [
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Helpers\\ApiResponse.php' => 
   array (
-    'fileHash' => '054db0c4f7b26392ee589f61c271315dd99000ae',
+    'fileHash' => 'bbba304b2b1ceb51531b89b0563078a14885ac91',
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\ApiAuthController.php',
@@ -2295,7 +2319,7 @@ return [
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\ApiAuthController.php' => 
   array (
-    'fileHash' => '2ce5acfe08ccd6537aee76037529d6d1fcefe2f8',
+    'fileHash' => '9796f2374704035cf3859b2dbacaa87390e537ef',
     'dependentFiles' => 
     array (
     ),
@@ -2362,35 +2386,21 @@ return [
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Invoice\\InvoiceController.php' => 
   array (
-    'fileHash' => '07917e542b1326f634c98d6ff86fa6f503cf03b1',
-    'dependentFiles' => 
-    array (
-    ),
-  ),
-  'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php' => 
-  array (
-    'fileHash' => '5dd13199fd365b7b79a1d195d01087722b88f617',
-    'dependentFiles' => 
-    array (
-    ),
-  ),
-  'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\UserResource.php' => 
-  array (
-    'fileHash' => '70ab2c01012cf516f5a983d443eaa0775729556b',
+    'fileHash' => 'f8900f5b3973b678d03dfa4bd512a0c18adc7bc3',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\PermissionController.php' => 
   array (
-    'fileHash' => 'e6249821cda8565650bf9e5a930b35d3c2d59309',
+    'fileHash' => '9a4c3eb40edc580eb26a5b701c30afb00633309f',
     'dependentFiles' => 
     array (
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php' => 
   array (
-    'fileHash' => 'df1e842b95b00917f61b8c2f50929980df73bfdd',
+    'fileHash' => '9e7f74d4992831289062463bda245650db1f5f6d',
     'dependentFiles' => 
     array (
     ),
@@ -2430,17 +2440,15 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Invoice\\InvoiceController.php',
-      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php',
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Resources\\UserResource.php' => 
   array (
-    'fileHash' => '1695989139075f929a2f560f4c6f0dce846b7889',
+    'fileHash' => '34400cf9c72d5bc0fddab87c9f0fed7ef17809ad',
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\ApiAuthController.php',
-      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\UserResource.php',
-      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php',
+      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php',
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Models\\Invoice.php' => 
@@ -2452,8 +2460,7 @@ return [
       1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Actions\\Invoices\\SearchInvoices.php',
       2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Console\\Commands\\ProcessInvoicesCommand.php',
       3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Invoice\\InvoiceController.php',
-      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php',
-      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Resources\\InvoiceResource.php',
+      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Resources\\InvoiceResource.php',
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Models\\User.php' => 
@@ -2467,9 +2474,9 @@ return [
       3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\EmailVerificationNotificationController.php',
       4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\RegisteredUserController.php',
       5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\VerifyEmailController.php',
-      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\UserResource.php',
-      7 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php',
-      8 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Middleware\\EnsureEmailIsVerified.php',
+      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php',
+      7 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Middleware\\EnsureEmailIsVerified.php',
+      8 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Resources\\UserResource.php',
       9 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\AuthTest.php',
       10 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
       11 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
@@ -2487,7 +2494,7 @@ return [
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Services\\ExchangeRateService.php' => 
   array (
-    'fileHash' => 'fd8e9fa4135e8911e59e8566e7be4e30880312ad',
+    'fileHash' => '153000103640ccaf91d9795893a93a0dfba614e7',
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Actions\\Invoices\\ProcessInvoiceUpload.php',
@@ -2501,24 +2508,22 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\AuthTest.php',
-      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExampleTest.php',
-      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
-      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
-      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
-      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
-      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
-      7 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\TestCase.php',
+      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
+      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
+      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
+      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
+      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
+      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\TestCase.php',
     ),
     'usedTraitDependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\AuthTest.php',
-      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExampleTest.php',
-      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
-      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
-      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
-      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
-      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
-      7 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\TestCase.php',
+      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
+      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
+      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
+      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
+      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
+      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\TestCase.php',
     ),
   ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\AuthTest.php' => 
@@ -2576,12 +2581,11 @@ return [
     'dependentFiles' => 
     array (
       0 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\AuthTest.php',
-      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExampleTest.php',
-      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
-      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
-      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
-      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
-      6 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
+      1 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\ExchangeRateServiceTest.php',
+      2 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceTest.php',
+      3 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\InvoiceUploadTest.php',
+      4 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\PermissionTest.php',
+      5 => 'C:\\laragon\\www\\equitylink-fullstack\\backend\\tests\\Feature\\UserTest.php',
     ),
   ),
 ),
@@ -2701,28 +2705,7 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'App\\Actions\\Invoices\\ProcessInvoiceUpload',
-       'phpDoc' => 
-      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-         'phpDocString' => '/**
- * Action para procesar la carga de facturas XML.
- * 
- * Flujo:
- * 1. Recibe archivo XML (UploadedFile)
- * 2. Parsea atributos clave (UUID, Folio, Emisor, Receptor, Moneda, Total)
- * 3. Consulta tipo de cambio con ExchangeRateService
- * 4. Persiste en DB como Invoice
- */',
-         'namespace' => 'App\\Actions\\Invoices',
-         'uses' => 
-        array (
-          'invoice' => 'App\\Models\\Invoice',
-          'exchangerateservice' => 'App\\Services\\ExchangeRateService',
-          'uploadedfile' => 'Illuminate\\Http\\UploadedFile',
-        ),
-         'constUses' => 
-        array (
-        ),
-      )),
+       'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
        'extends' => NULL,
@@ -3944,160 +3927,6 @@ return [
       ),
     )),
   ),
-  'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'App\\Http\\Resources\\InvoiceResource',
-       'phpDoc' => 
-      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-         'phpDocString' => '/**
- * @mixin \\App\\Models\\Invoice
- */',
-         'namespace' => 'App\\Http\\Resources',
-         'uses' => 
-        array (
-          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
-          'invoice' => 'App\\Models\\Invoice',
-        ),
-         'constUses' => 
-        array (
-        ),
-      )),
-       'abstract' => false,
-       'final' => false,
-       'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
-       'implements' => 
-      array (
-      ),
-       'usedTraits' => 
-      array (
-      ),
-       'traitUseAdaptations' => 
-      array (
-      ),
-       'statements' => 
-      array (
-        0 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'toArray',
-           'phpDoc' => NULL,
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'array',
-           'parameters' => 
-          array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'request',
-               'type' => NULL,
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-            )),
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-      ),
-       'attributes' => 
-      array (
-      ),
-    )),
-  ),
-  'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\UserResource.php' => 
-  array (
-    0 => 
-    \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
-       'name' => 'App\\Http\\Resources\\UserResource',
-       'phpDoc' => 
-      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-         'phpDocString' => '/**
- * @mixin \\App\\Models\\User
- */',
-         'namespace' => 'App\\Http\\Resources',
-         'uses' => 
-        array (
-          'request' => 'Illuminate\\Http\\Request',
-          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
-          'user' => 'App\\Models\\User',
-        ),
-         'constUses' => 
-        array (
-        ),
-      )),
-       'abstract' => false,
-       'final' => false,
-       'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
-       'implements' => 
-      array (
-      ),
-       'usedTraits' => 
-      array (
-      ),
-       'traitUseAdaptations' => 
-      array (
-      ),
-       'statements' => 
-      array (
-        0 => 
-        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
-           'name' => 'toArray',
-           'phpDoc' => 
-          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-             'phpDocString' => '/**
-     * Transform the resource into an array.
-     */',
-             'namespace' => 'App\\Http\\Resources',
-             'uses' => 
-            array (
-              'request' => 'Illuminate\\Http\\Request',
-              'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
-              'user' => 'App\\Models\\User',
-            ),
-             'constUses' => 
-            array (
-            ),
-          )),
-           'byRef' => false,
-           'public' => true,
-           'private' => false,
-           'abstract' => false,
-           'final' => false,
-           'static' => false,
-           'returnType' => 'array',
-           'parameters' => 
-          array (
-            0 => 
-            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
-               'name' => 'request',
-               'type' => 'Illuminate\\Http\\Request',
-               'byRef' => false,
-               'variadic' => false,
-               'hasDefault' => false,
-               'attributes' => 
-              array (
-              ),
-            )),
-          ),
-           'attributes' => 
-          array (
-          ),
-        )),
-      ),
-       'attributes' => 
-      array (
-      ),
-    )),
-  ),
   'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\PermissionController.php' => 
   array (
     0 => 
@@ -4229,7 +4058,7 @@ return [
             0 => 
             \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
                'name' => 'permission',
-               'type' => 'Spatie\\Permission\\Models\\Permission',
+               'type' => NULL,
                'byRef' => false,
                'variadic' => false,
                'hasDefault' => false,
@@ -4407,6 +4236,43 @@ return [
               array (
               ),
             )),
+          ),
+           'attributes' => 
+          array (
+          ),
+        )),
+        3 => 
+        \PHPStan\Dependency\ExportedNode\ExportedMethodNode::__set_state(array(
+           'name' => 'lists',
+           'phpDoc' => 
+          \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+             'phpDocString' => '/**
+ * Listar todos los permisos y roles
+ */',
+             'namespace' => 'App\\Http\\Controllers\\User',
+             'uses' => 
+            array (
+              'apiresponse' => 'App\\Helpers\\ApiResponse',
+              'controller' => 'App\\Http\\Controllers\\Controller',
+              'userresource' => 'App\\Http\\Resources\\UserResource',
+              'user' => 'App\\Models\\User',
+              'request' => 'Illuminate\\Http\\Request',
+              'permission' => 'Spatie\\Permission\\Models\\Permission',
+              'role' => 'Spatie\\Permission\\Models\\Role',
+            ),
+             'constUses' => 
+            array (
+            ),
+          )),
+           'byRef' => false,
+           'public' => true,
+           'private' => false,
+           'abstract' => false,
+           'final' => false,
+           'static' => false,
+           'returnType' => NULL,
+           'parameters' => 
+          array (
           ),
            'attributes' => 
           array (
@@ -4881,7 +4747,22 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'App\\Http\\Resources\\UserResource',
-       'phpDoc' => NULL,
+       'phpDoc' => 
+      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
+         'phpDocString' => '/**
+ * @mixin \\App\\Models\\User
+ */',
+         'namespace' => 'App\\Http\\Resources',
+         'uses' => 
+        array (
+          'request' => 'Illuminate\\Http\\Request',
+          'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+          'user' => 'App\\Models\\User',
+        ),
+         'constUses' => 
+        array (
+        ),
+      )),
        'abstract' => false,
        'final' => false,
        'extends' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
@@ -4903,14 +4784,13 @@ return [
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
      * Transform the resource into an array.
-     *
-     * @return array<string, mixed>
      */',
              'namespace' => 'App\\Http\\Resources',
              'uses' => 
             array (
               'request' => 'Illuminate\\Http\\Request',
               'jsonresource' => 'Illuminate\\Http\\Resources\\Json\\JsonResource',
+              'user' => 'App\\Models\\User',
             ),
              'constUses' => 
             array (
@@ -5191,26 +5071,7 @@ return [
     0 => 
     \PHPStan\Dependency\ExportedNode\ExportedClassNode::__set_state(array(
        'name' => 'App\\Services\\ExchangeRateService',
-       'phpDoc' => 
-      \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
-         'phpDocString' => '/**
- * Service encargado de consultar el tipo de cambio actual en el DOF.
- * 
- * Responsabilidad única:
- * - Consumir el endpoint del DOF
- * - Parsear la respuesta y devolver un float
- * 
- * Se inyecta en Actions como ProcessInvoiceUpload.
- */',
-         'namespace' => 'App\\Services',
-         'uses' => 
-        array (
-          'http' => 'Illuminate\\Support\\Facades\\Http',
-        ),
-         'constUses' => 
-        array (
-        ),
-      )),
+       'phpDoc' => NULL,
        'abstract' => false,
        'final' => false,
        'extends' => NULL,
@@ -5231,8 +5092,9 @@ return [
            'phpDoc' => 
           \PHPStan\Dependency\ExportedNode\ExportedPhpDocNode::__set_state(array(
              'phpDocString' => '/**
-     * Obtiene el tipo de cambio del día desde el DOF.
+     * Obtiene el tipo de cambio FIX USD/MXN desde Banxico.
      *
+     * @param string $moneda
      * @return float
      * @throws \\Exception
      */',
@@ -5254,6 +5116,17 @@ return [
            'returnType' => 'float',
            'parameters' => 
           array (
+            0 => 
+            \PHPStan\Dependency\ExportedNode\ExportedParameterNode::__set_state(array(
+               'name' => 'moneda',
+               'type' => 'string',
+               'byRef' => false,
+               'variadic' => false,
+               'hasDefault' => true,
+               'attributes' => 
+              array (
+              ),
+            )),
           ),
            'attributes' => 
           array (

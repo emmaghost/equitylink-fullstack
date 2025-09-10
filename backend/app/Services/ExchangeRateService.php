@@ -4,44 +4,45 @@ namespace App\Services;
 
 use Illuminate\Support\Facades\Http;
 
-
-/**
- * Service encargado de consultar el tipo de cambio actual en el DOF.
- * 
- * Responsabilidad única:
- * - Consumir el endpoint del DOF
- * - Parsear la respuesta y devolver un float
- * 
- * Se inyecta en Actions como ProcessInvoiceUpload.
- */
-
 class ExchangeRateService
 {
+    private string $token = "8e1bd74b8226948f553e7d2cbe3533b7334b92dc59ec31cf6bc2134475051d30";
+    private string $baseUrl = "https://www.banxico.org.mx/SieAPIRest/service/v1";
+
     /**
-     * Obtiene el tipo de cambio del día desde el DOF.
+     * Obtiene el tipo de cambio FIX USD/MXN desde Banxico.
      *
+     * @param string $moneda
      * @return float
      * @throws \Exception
      */
-    public function getTipoCambio(): float
+    public function getTipoCambio(string $moneda = 'USD'): float
     {
-        try {
-            //  Endpoint real del DOF
-            $url = "https://www.dof.gob.mx/indicadores_detalle.php?cod_tipo_indicador=158";
-
-            $response = Http::get($url);
-
-            if (!$response->successful()) {
-                throw new \Exception('No se pudo obtener tipo de cambio del DOF');
-            }
-
-            // El DOF devuelve HTML, habría que parsearlo.
-            // Para simplificar, asumimos que logras extraer el número.
-            // Aquí solo pongo un valor simulado.
-            return 18.50;
-        } catch (\Throwable $e) {
-            // En caso de error, puedes decidir devolver un fallback
-            throw new \Exception('Error consultando DOF: ' . $e->getMessage());
+        if ($moneda === 'MXN') {
+            return 1.0; // no requiere tipo de cambio
         }
+
+        $serie = "SF43718"; // Serie FIX dólar
+        $url = "{$this->baseUrl}/series/{$serie}/datos/oportuno";
+
+        $response = Http::withHeaders([
+            "Bmx-Token" => $this->token,
+            "Accept"    => "application/json",
+        ])
+        ->when(app()->environment('local'), fn($req) => $req->withoutVerifying())
+        ->get($url);
+
+        if (!$response->successful()) {
+            throw new \Exception("Error consultando Banxico: {$response->status()}");
+        }
+
+        $data = $response->json();
+        $dato = $data['bmx']['series'][0]['datos'][0]['dato'] ?? null;
+
+        if (!$dato || !is_numeric($dato)) {
+            throw new \Exception("No se pudo obtener tipo de cambio válido");
+        }
+
+        return (float) $dato;
     }
 }

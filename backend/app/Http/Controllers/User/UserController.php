@@ -71,4 +71,15 @@ class UserController extends Controller
             'Permisos actualizados'
         );
     }
+
+    /**
+ * Listar todos los permisos y roles
+ */
+public function lists()
+{
+    return ApiResponse::success([
+        'roles'       => Role::all()->pluck('name'),
+        'permissions' => Permission::all()->pluck('name'),
+    ], 'Roles y permisos disponibles');
+}
 }

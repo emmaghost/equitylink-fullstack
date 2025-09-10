@@ -27,7 +27,10 @@ class InvoiceController extends Controller
             $invoice = $action->handle($request->file('xml'));
             return ApiResponse::success(new InvoiceResource($invoice),'Factura cargada correctamente',201);
         } catch (\Throwable $e) {
-            return ApiResponse::error('Error procesando factura', 422, $e->getMessage());
+            return ApiResponse::error(
+                    $e->getMessage(),
+                    422
+                );
         }
     }
 }

@@ -34,15 +34,7 @@ return Application::configure(basePath: dirname(__DIR__))
                         422,
                         $e->errors()
                     );
-                }
-
-                if ($e instanceof AuthenticationException) {
-                    return ApiResponse::error(
-                        'No autenticado',
-                        401
-                    );
-                }
-
+                }            
                 if ($e instanceof HttpResponseException) {
                     return ApiResponse::error(
                         'Error en la petición',

@@ -37,7 +37,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Actions\\Invoices\\ProcessInvoiceUpload.php' => 
     array (
-      0 => 'e801d6a1130fe3a7d3f6bb9feb4fabd09d8ee3b8',
+      0 => 'bd6bbf9bf9debb76a38e0ec425ef29273548715c',
       1 => 
       array (
         0 => 'app\\actions\\invoices\\processinvoiceupload',
@@ -83,7 +83,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Helpers\\ApiResponse.php' => 
     array (
-      0 => '054db0c4f7b26392ee589f61c271315dd99000ae',
+      0 => 'bbba304b2b1ceb51531b89b0563078a14885ac91',
       1 => 
       array (
         0 => 'app\\helpers\\apiresponse',
@@ -99,7 +99,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Auth\\ApiAuthController.php' => 
     array (
-      0 => '2ce5acfe08ccd6537aee76037529d6d1fcefe2f8',
+      0 => '9796f2374704035cf3859b2dbacaa87390e537ef',
       1 => 
       array (
         0 => 'app\\http\\controllers\\auth\\apiauthcontroller',
@@ -238,7 +238,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Invoice\\InvoiceController.php' => 
     array (
-      0 => '07917e542b1326f634c98d6ff86fa6f503cf03b1',
+      0 => 'f8900f5b3973b678d03dfa4bd512a0c18adc7bc3',
       1 => 
       array (
         0 => 'app\\http\\controllers\\invoice\\invoicecontroller',
@@ -252,39 +252,9 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
       array (
       ),
     ),
-    'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\InvoiceResource.php' => 
-    array (
-      0 => '5dd13199fd365b7b79a1d195d01087722b88f617',
-      1 => 
-      array (
-        0 => 'app\\http\\resources\\invoiceresource',
-      ),
-      2 => 
-      array (
-        0 => 'app\\http\\resources\\toarray',
-      ),
-      3 => 
-      array (
-      ),
-    ),
-    'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\Resources\\UserResource.php' => 
-    array (
-      0 => '70ab2c01012cf516f5a983d443eaa0775729556b',
-      1 => 
-      array (
-        0 => 'app\\http\\resources\\userresource',
-      ),
-      2 => 
-      array (
-        0 => 'app\\http\\resources\\toarray',
-      ),
-      3 => 
-      array (
-      ),
-    ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\PermissionController.php' => 
     array (
-      0 => 'e6249821cda8565650bf9e5a930b35d3c2d59309',
+      0 => '9a4c3eb40edc580eb26a5b701c30afb00633309f',
       1 => 
       array (
         0 => 'app\\http\\controllers\\user\\permissioncontroller',
@@ -301,7 +271,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Controllers\\User\\UserController.php' => 
     array (
-      0 => 'df1e842b95b00917f61b8c2f50929980df73bfdd',
+      0 => '9e7f74d4992831289062463bda245650db1f5f6d',
       1 => 
       array (
         0 => 'app\\http\\controllers\\user\\usercontroller',
@@ -311,6 +281,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
         0 => 'app\\http\\controllers\\user\\index',
         1 => 'app\\http\\controllers\\user\\store',
         2 => 'app\\http\\controllers\\user\\assignpermissions',
+        3 => 'app\\http\\controllers\\user\\lists',
       ),
       3 => 
       array (
@@ -397,7 +368,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Http\\Resources\\UserResource.php' => 
     array (
-      0 => '1695989139075f929a2f560f4c6f0dce846b7889',
+      0 => '34400cf9c72d5bc0fddab87c9f0fed7ef17809ad',
       1 => 
       array (
         0 => 'app\\http\\resources\\userresource',
@@ -456,7 +427,7 @@ return \PHPStan\Cache\CacheItem::__set_state(array(
     ),
     'C:\\laragon\\www\\equitylink-fullstack\\backend\\app\\Services\\ExchangeRateService.php' => 
     array (
-      0 => 'fd8e9fa4135e8911e59e8566e7be4e30880312ad',
+      0 => '153000103640ccaf91d9795893a93a0dfba614e7',
       1 => 
       array (
         0 => 'app\\services\\exchangerateservice',

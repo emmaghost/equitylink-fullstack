@@ -33,6 +33,7 @@ class PermissionController extends Controller
 
         $permission = Permission::create([
             'name' => $data['name'],
+            'guard_name' => 'web', 
         ]);
 
         return ApiResponse::success(
@@ -45,9 +46,22 @@ class PermissionController extends Controller
     /**
      * Eliminar un permiso
      */
-    public function destroy(Permission $permission)
+    public function destroy($permission)
     {
-        $permission->delete();
+        $perm = Permission::where('name', $permission)
+            ->where('guard_name', 'web')
+            ->firstOrFail();
+
+        // Si el permiso está asignado a algún rol o usuario, no permitir borrar
+        if ($perm->roles()->exists() || $perm->users()->exists()) {
+            return ApiResponse::error(
+            "El permiso '{$permission}' está asignado a usuarios o roles y no puede ser eliminado.",
+            422, // código HTTP
+            ['permission' => $permission] // detalles opcionales
+        );
+        }
+
+        $perm->delete();
 
         return ApiResponse::success(
             null,
