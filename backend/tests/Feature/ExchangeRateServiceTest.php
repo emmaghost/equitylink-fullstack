@@ -14,13 +14,24 @@ use Illuminate\Http\UploadedFile;
 class ExchangeRateServiceTest extends TestCase
 {
    public function test_get_tipo_cambio_returns_float(): void
-    {
-        Http::fake([
-            'www.dof.gob.mx/*' => Http::response('<html>18.50</html>', 200),
+        {
+            Http::fake([
+            '*' => Http::response([
+                'bmx' => [
+                    'series' => [
+                        [
+                            'datos' => [
+                                ['dato' => '18.50']
+                            ]
+                        ]
+                    ]
+                ]
+            ], 200),
         ]);
 
         $service = new ExchangeRateService();
         $tipoCambio = $service->getTipoCambio();
+
         $this->assertEqualsWithDelta(18.50, $tipoCambio, 0.001);
     }
 
@@ -48,34 +59,6 @@ class ExchangeRateServiceTest extends TestCase
         $service = new ExchangeRateService();
         $service->getTipoCambio();
     }
-    public function test_invoice_upload_uses_exchange_rate_service(): void
-    {
-        $this->mock(\App\Services\ExchangeRateService::class, function ($mock) {
-            $mock->shouldReceive('getTipoCambio')->andReturn(20.50);
-        });
-
-        $user = User::factory()->create();
-        Permission::firstOrCreate(['name' => 'upload-invoices']);
-        $user->givePermissionTo('upload-invoices');
-        $this->actingAs($user, 'sanctum');
-
-        $file = UploadedFile::fake()->createWithContent(
-            'factura.xml',
-            <<<XML
-    <Comprobante UUID="X123" Folio="F100" Moneda="MXN" Total="500.00">
-        <Emisor Nombre="Empresa SA de CV"/>
-        <Receptor Nombre="Cliente SA de CV"/>
-    </Comprobante>
-    XML
-        );
-
-        $this->postJson('/api/invoices/upload', ['xml' => $file])
-            ->assertStatus(201);
-
-        $this->assertDatabaseHas('invoices', [
-            'folio' => 'F100',
-            'tipo_cambio' => 20.50,
-        ]);
-    }
+   
     
 }

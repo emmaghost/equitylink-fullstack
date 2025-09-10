@@ -41,12 +41,19 @@ class ApiAuthController extends Controller
             'password' => 'required|string',
         ]);
 
-        $result = $action->handle($data);
+        try {
+            $result = $action->handle($data);
 
-        return ApiResponse::success([
-            'user'  => (new UserResource($result['user']))->toArray($request),
-            'token' => $result['token'],
-        ], 'Login exitoso');
+            return ApiResponse::success([
+                'user'  => (new UserResource($result['user']))->toArray($request),
+                'token' => $result['token'],
+            ], 'Login exitoso');
+        } catch (\Exception $e) {
+            return response()->json([
+                'status'  => 'error',
+                'message' => 'Credenciales inválidas',
+            ], 401);
+        }
     }
 
     public function logout(Request $request)

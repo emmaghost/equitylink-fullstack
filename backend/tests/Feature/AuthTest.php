@@ -67,14 +67,11 @@ class AuthTest extends TestCase
     public function test_me_endpoint_returns_authenticated_user(): void
     {
         $user = User::factory()->create();
-        $this->actingAs($user, 'sanctum');
+        $response = $this->actingAs($user, 'web')->getJson('/api/me');
 
-        $response = $this->getJson('/api/me');
         $response->assertStatus(200)
-            ->assertJson([
-                'id' => $user->id,
-                'email' => $user->email,
-            ]);
+            ->assertJsonPath('data.user.id', $user->id)
+            ->assertJsonPath('data.user.email', $user->email);
     }
 
     public function test_logout_invalidates_token(): void
