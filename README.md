@@ -1,4 +1,10 @@
+
+
 # 📘 Equity Link – Fullstack Test (Laravel + ReactJS)
+
+![CI](https://github.com/emmaghost/EquityLink/actions/workflows/ci.yml/badge.svg)
+![PHPStan](https://img.shields.io/badge/PHPStan-level%206-brightgreen?logo=php)
+
 
 Prototipo de aplicación **fullstack** desarrollado como ejercicio técnico.  
 El objetivo es demostrar **arquitectura clara, buenas prácticas de desarrollo, principios SOLID y visión de escalabilidad**, más allá del diseño visual.  
@@ -6,6 +12,16 @@ El objetivo es demostrar **arquitectura clara, buenas prácticas de desarrollo, 
 ---
 
 ## 🚀 Tecnologías principales
+
+## ✅ Calidad del código y CI/CD
+
+Este repositorio está configurado con **GitHub Actions** para validar automáticamente cada commit y pull request:
+
+- **Tests automáticos** con PHPUnit / Pest → aseguran que autenticación, roles, permisos e invoices funcionen.  
+- **Análisis estático con PHPStan (nivel 6)** → detecta errores en tiempo de desarrollo.  
+- **Validación continua** → cada push a `master` dispara el pipeline y muestra su estado en el badge superior.  
+
+De esta manera, se garantiza que el backend siempre se mantenga estable y con estándares de calidad altos.
 
 ### Backend
 - Laravel 11 – Framework PHP  
